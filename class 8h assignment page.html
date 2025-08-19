@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 8 Assignment Portal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            color: #333;
+        }
+        header {
+            background: #34495e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 0;
+        }
+        .assignment-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .subject-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 23%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .subject-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #34495e;
+            font-size: 24px;
+        }
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Class 8 Assignment Portal</h1>
+    <p>Choose a subject to get your assignments!</p>
+</header>
+
+<div class="container">
+    <div class="assignment-box">
+        <div class="subject-box" onclick="window.location.href='class 8th maths assig.html'">
+            <h2>Maths Assignments</h2>
+        </div>
+        <div class="subject-box" onclick="window.location.href='class8th english assig.html'">
+            <h2>English Assignments</h2>
+        </div>
+        <div class="subject-box" onclick="window.location.href='class8th science assign.html'">
+            <h2>Science Assignments</h2>
+        </div>
+        <div class="subject-box" onclick="window.location.href='class8th sst assign.html'">
+            <h2>SST Assignments</h2>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Education Hub | Designed with ❤️ by Atul Sharma | gmail: sharmadhani2003@gmail.com</p>
+    <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Books - Educational Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #1d3557;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #1d3557;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .shop-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .book-column {
+            flex: 1;
+            min-width: 250px;
+            max-width: 33%;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+            box-sizing: border-box;
+        }
+
+        .book-column:hover {
+            transform: translateY(-10px);
+        }
+
+        .book-column h3 {
+            font-size: 1.4em;
+            color: #1d3557;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .book-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .book-column ul li {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .book-column a {
+            color: #1d3557;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .book-column a:hover {
+            color: #ff8c00;
+        }
+
+        .shop-now-box {
+            background: #ff8c00;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .shop-now-box h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .shop-now-box p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .shop-now-box a {
+            background: #fff;
+            color: #ff8c00;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .shop-now-box a:hover {
+            background: #ff6000;
+            color: #fff;
+        }
+
+        footer {
+            background: #1d3557;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .shop-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book-column {
+                width: 90%;
+                margin: 15px 0;
+            }
+
+            .shop-now-box h3 {
+                font-size: 1.5em;
+            }
+
+            .shop-now-box p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Shop Books</h1>
+        <p>Browse and shop textbooks for Class 8, 9, and 10</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <!-- Shop Books Section -->
+        <div class="section">
+            <h2>Browse Books</h2>
+            <div class="shop-container">
+                <!-- Class 8 Books Column -->
+                <div class="book-column">
+                    <h3>Class 8 Books</h3>
+                    <ul>
+                        <li><a href="#">Mathematics - Class 8</a></li>
+                        <li><a href="#">Science - Class 8</a></li>
+                        <li><a href="#">English - Class 8</a></li>
+                        <li><a href="#">Social Studies - Class 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Class 9 Books Column -->
+                <div class="book-column">
+                    <h3>Class 9 Books</h3>
+                    <ul>
+                        <li><a href="#">Mathematics - Class 9</a></li>
+                        <li><a href="#">Science - Class 9</a></li>
+                        <li><a href="#">English - Class 9</a></li>
+                        <li><a href="#">Social Studies - Class 9</a></li>
+                    </ul>
+                </div>
+
+                <!-- Class 10 Books Column -->
+                <div class="book-column">
+                    <h3>Class 10 Books</h3>
+                    <ul>
+                        <li><a href="#">Mathematics - Class 10</a></li>
+                        <li><a href="#">Science - Class 10</a></li>
+                        <li><a href="#">English - Class 10</a></li>
+                        <li><a href="#">Social Studies - Class 10</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shop Now Boxes Section -->
+        <div class="section">
+            <h2>Shop Now</h2>
+            <div class="shop-container">
+                <!-- Shop Now Box for Class 8 -->
+                <div class="shop-now-box">
+                    <h3>Shop Class 8 Books</h3>
+                    <p>Find all textbooks for Class 8. Get the best deals now!</p>
+                    <a href="https://www.amazon.in/NCERTSHOP-Textbook-PolScience-Geography-Economics/dp/B0DXKZVDQK/ref=sr_1_1?crid=1LBK8G2HHQ8HO&dib=eyJ2IjoiMSJ9.DiLKSnBueSSh9LCCNhFF5vv9i6UD2hBE8m0u82-WKjPSWkrCdRpO_xSiA4JvuVFdK1E0ABVr-95irfAxMTvSK2GnQHTfTa_IWiGtpKHqe4llzPv2xYsIgxiGDsK5OAYMoRw8hGzQZ2zm95lPRpxAIKTa1WGi9pw1mfSElBZ-ETB_SBYAQamubZWZbmnE4XaWLIGf924VSAecZrCWtFvlAWa-oLQMvyEkAM2p1IXOFcw.o4sjKtQzEGsjBGJUN0Yp3n4rMPNKd-llBwkwLN5CrGs&dib_tag=se&keywords=class+8th+books+set+2025-26&qid=1746431464&sprefix=class+8th+books+set+2025-26%2Caps%2C408&sr=8-1">Shop Now</a>
+                </div>
+
+                <!-- Shop Now Box for Class 9 -->
+                <div class="shop-now-box">
+                    <h3>Shop Class 9 Books</h3>
+                    <p>Find all textbooks for Class 9. Get the best deals now!</p>
+                    <a href="https://www.amazon.in/NCERT-Class-Textbook-Books-2025-26/dp/B0DZ2ZTGWN/ref=sr_1_1?crid=35S6HSCN0FJ4N&dib=eyJ2IjoiMSJ9.fu3Get0xbAmG5RZmZF8qhzn39kae54KtWJ5DTOKpg9oRGwlUHE9xDqmKbfGusFC74E0YJYiTbX4DRIjx7aeup7YpRMWjiu4-JmixWsDC8qKbALVW7Jh4yp2XMS8OCp_orFfhsWOfJFgxwmtLPjgDzfE6qHNXVectlE3EbP-B5PDKMgwp0X3LaX_sBW52_9wogCmHDTCGR-J8_8cbvnWzYrVmDn7JYcQ3yg1zod4dNao.qGoc3iJHakrH2atiy16Mh5H-57H7yylnKu5UcKJR69c&dib_tag=se&keywords=class+9th+books+set+2025-26&qid=1746431497&sprefix=class+th+books+set+2025-26%2Caps%2C416&sr=8-1">Shop Now</a>
+                </div>
+
+                <!-- Shop Now Box for Class 10 -->
+                <div class="shop-now-box">
+                    <h3>Shop Class 10 Books</h3>
+                    <p>Find all textbooks for Class 10. Get the best deals now!</p>
+                    <a href="https://www.amazon.in/NCERT-Books-English-Medium-Hardcover/dp/B07YB6D4P7/ref=sr_1_1?crid=1BYMBK77VBMI2&dib=eyJ2IjoiMSJ9.OD7dByKDqPSD2R5wV5_IaktSXC_WDEFBRw5JB65Z6jzT7y-1AAx-AlXzXoXuRSVXURUO2rAo765geJrnIfgIwu5s6c_NscY10GG6vmliE7mVdgBpQQ4KEgE8vIeRcI_qcLOt7D30iTyAHruI6hIj3vuR1PBM17OdujEW7oqKi8QYGb1OqQsHzH-51vpXYzUCS6JRVzA036wejUI3Ir1PFwVH0IcncZUoVosfH8-V0zc.Xglf2qOhr2Ok_R5Nx1jsK446c-Np7nnOsrlK9Ll1E0E&dib_tag=se&keywords=class+10th+books+set+2025-26&qid=1746426837&sprefix=class+10th+books+set%2Caps%2C2459&sr=8-1">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Shop Books | Powered by Knowledge</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Hub - Class 8th to 10th</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #1e2a47;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff8c00;
+        }
+
+        /* Main content */
+        main {
+            margin-top: 120px;
+            padding: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 1s ease;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: slideUp 1s ease-out;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+        }
+
+        h1, h2 {
+            color: #1e2a47;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff8c00;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ff6000;
+        }
+
+        /* New Box */
+        .question-box {
+            background-color: #f9f9f9;
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+        .question-box h3 {
+            color: #1e2a47;
+        }
+        .question-box p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e2a47;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Education Hub</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#notes">Class Notes</a>
+            <a href="#books">Books</a>
+            <a href="#shopping">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Education Hub</h2>
+            <p>Your one-stop platform for learning, study materials, and much more! Explore everything from Class 8th to 10th notes to buying the best books for your academic success.</p>
+            <a href="start learning.html" class="cta-button">Start Learning</a>
+        </section>
+
+        <!-- Question Box -->
+        <section class="question-box">
+            <h3>Have a Question? Ask Here!</h3>
+            <p>If you need any answers related to Class 8th to 9th, feel free to ask! Our experts are here to help with all your questions. Just submit your query below, and we'll get back to you as soon as possible!</p>
+            <a href="https://chatgpt.com/" class="cta-button">Ask Your Question</a>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <h2>Class Notes & Study Materials</h2>
+            <p>Get detailed notes for Class 8th to 10th subjects, prepared by experts to help you ace your exams!</p>
+            <ul>
+                <li><strong>Class 8th:</strong> Mathematics, Science, Social Science, English</li>
+                <li><strong>Class 9th:</strong> Mathematics, Science, Social Science, English</li>
+                <li><strong>Class 10th:</strong> Mathematics, Science, Social Science, English</li>
+            </ul>
+            <a href="brouse notes.html" class="cta-button">Browse Notes</a>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books">
+            <h2>Books for Every Class</h2>
+            <p>Find the best books recommended by top educators for Classes 8 to 10. Explore different boards and subjects.</p>
+            <ul>
+                <li><strong>Class 8th:</strong> Mathematics, Science, English Grammar, History</li>
+                <li><strong>Class 9th:</strong> Physics, Chemistry, Biology, Geography</li>
+                <li><strong>Class 10th:</strong> Mathematics, Physics, Chemistry, Biology</li>
+            </ul>
+            <a href="shop books.html" class="cta-button">Shop Books</a>
+        </section>
+
+        <!-- Shopping Section -->
+        
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have any questions or need support? Reach out to us anytime. We’re here to help!</p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpzKpMSDkcfTPFJcxSpnfzwPBMPsvwMPLCXPxGGdTVbBxpKSrPtKVZmhlZTWGkCSgbKdL" class="cta-button">Contact Us</a>
+        </section>
+
+    </main>
+
+    <!-- NEW FEEDBACK SECTION STARTS HERE -->
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <p>We would love to hear from you! Share your suggestions, feedback, or any issues you faced so we can improve your experience.</p>
+        <form action="#" method="post" style="margin-top:20px;">
+            <label for="name" style="display:block; margin-bottom:5px;">Name:</label>
+            <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;">
+    
+            <label for="email" style="display:block; margin-bottom:5px;">Email:</label>
+            <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;">
+    
+            <label for="message" style="display:block; margin-bottom:5px;">Message:</label>
+            <textarea id="message" name="message" rows="5" required style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc;"></textarea>
+    
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpzKpMSDkcfTPFJcxSpnfzwPBMPsvwMPLCXPxGGdTVbBxpKSrPtKVZmhlZTWGkCSgbKdL" class="cta-button" style="margin-top:15px; display:inline-block; text-align:center;">Submit Feedback</a>
+        </form>
+    </section>
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Education Hub | Designed with ❤️ by Atul Sharma | gmail: sharmadhani2003@gmail.com</p>
+        <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+    <!-- Script for Header Fade-Out on Scroll -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const scrollY = window.scrollY;
+            header.style.opacity = Math.max(1 - scrollY / 300, 0);
+        });
+    </script>
+
+</body>
+</html>
